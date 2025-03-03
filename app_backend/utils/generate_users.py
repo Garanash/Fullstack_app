@@ -83,6 +83,8 @@ svg_links = [
     "https://simpleicons.org/icons/linux.svg",  # Иконка Linux
 ]
 
+
+
 import random
 
 def generate_user(count):
