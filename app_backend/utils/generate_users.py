@@ -1,4 +1,4 @@
-from data_for_generation import *
+from app_backend.utils.data_for_generation import *
 import random
 
 
