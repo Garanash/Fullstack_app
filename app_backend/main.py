@@ -16,10 +16,12 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"]
 )
+
+TEST_DATA = generate_user(168)
+
 @app.get('/contacts')
 def contacts():
-    users = generate_user(168)
-    return users
+    return TEST_DATA
 
 if __name__ == "__main__":
     uvicorn.run("main:app", port=8888, reload=True)
